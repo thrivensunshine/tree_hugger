@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.treeCard{
+  border-style: groove;
+  border-color: green;
+  background-color: #E3E9E2;
+  text-align: center;
+  border-radius: 18px;
+  filter: drop-shadow(3px 5px 6px black);
+}
+
+
+body, html {
+
+    margin: 0;
+    background-image: url('./bark-image.jpg');
+
+}
+
+
+.testboo{
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 25px;
+  font-weight: bold;
+  outline-width: thick;
+  outline-color: purple;
+}
+
+.userBack{
+display: block;
+height: 1000px;
+width:100%;
+background-color: pink;
+z-index: -1;
+position: absolute;
+top:0
+}
+.treeCont{
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+
+  margin: auto;
+  z-index: 100;
+  top:0px;
+}
+.imgboo{
+  z-index: -200;
+  position: sticky;
+  top:0px;
+}
+.barkimg{
+  width: 100%;
+  height:100%;
+  z-index: -100;
+
+}
+.search{
+  position: sticky;
+  top:0;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 7px 7px 7px black;
+  font-family: 'Special Elite', cursive;
+  color: white;
+  border-color: black;
+  z-index: 1;
+}
+
+.searchBar{
+  width: 30%;
+  height: 30px;
+  border-radius: 18px;
+  font-size: 20px
+}
+
+.gridit{
+  position: static;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /* align-items: center; */
+  /* padding-left: 8%; */
+  margin:auto;
+  top:0px;
+
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ------------------splash page ------------------ */
+.bodyback{
+  display: inline; /* the default for span */
+  position: fixed;
+
+  width: 100%;
+  height:100%;
+  padding-right: 100%;
+  z-index: -1;
+  background-color: white;
+}
+
+.header{
+  font-family: 'Special Elite', cursive;
+  font-size: 80px;
+  position: fixed;
+  left: 20px;
+}
+
+.city{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 120%;
+
+}
+
+.signtree{
+  z-index: 100;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 65%;
+
+   filter: drop-shadow(2px 2px 2px grey);
+
+}
+.trees{
+  position: fixed;
+  width: 100%;
+  bottom: 245px;
+  z-index: -1;
+  height: 50%;
+
+   filter: drop-shadow(2px 2px 2px #222);
+}
+.treesfront{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 30%;
+
+
+}
+
+.greenblock{
+
+    display: inline; /* the default for span */
+    position: inherit;
+    bottom: 0px;
+    width: 100%;
+    height:32%;
+    border-radius: 20px 20px;
+    z-index: -1;
+    background-color: rgb(41, 85, 41);
+
+}
+
+.appleButton{
+  background-color: red;
+  position: fixed;
+    right: 39.5%;
+    top: 35%;
+   border-radius: 20px 20px;
+
+   padding: 30px 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   z-index: 200;
+   opacity: .01
+}
+/* -----------------------end of splash page-------------------------- */
+
+    /* color: */

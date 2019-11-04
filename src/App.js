@@ -3,7 +3,7 @@ import './App.css';
 import TreeContainer from './containers/TreesContainer'
 import Splash from './containers/Splash'
 import UserPage from './containers/UserPage'
-
+// putting comment- testing if i can access metrics 
 class App extends Component {
 
   state ={

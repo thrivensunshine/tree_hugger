@@ -3,7 +3,11 @@ import './App.css';
 import TreeContainer from './containers/TreesContainer'
 import Splash from './containers/Splash'
 import UserPage from './containers/UserPage'
-// putting comment- testing if i can access metrics 
+
+var StatsD = require('node-dogstatsd').StatsD;
+var dogstatsd = new StatsD();
+
+// putting comment- testing if i can access metrics
 class App extends Component {
 
   state ={
@@ -17,6 +21,9 @@ class App extends Component {
   //componentDidMount
   componentDidMount() {
     this.fetchData()
+
+    console.log(dogstatsd + "LOOK AT MEEEEE dos")
+
   }
 
   // fetch from external api
@@ -29,6 +36,7 @@ class App extends Component {
         filtered: data
       })
     })
+
   }
 
   // handle change of page for render function
@@ -81,7 +89,8 @@ class App extends Component {
     this.setState({
       filtered: newArr
     })
-
+    console.log(dogstatsd + "BOOOOO")
+      debugger
   }
 
   //handle select filters
